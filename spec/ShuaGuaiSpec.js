@@ -33,5 +33,13 @@ describe('找零钱',function(){
    it('if n = 11',function(){
    	expect(count_change(11)).toEqual(4);
    });
+});
+describe('函数f有如下规定： 如果n<3, 那么f(n)=n,如果n>=3那么f(n) = f(n-1)+2f(n-2)+2f(n-3).实现这个函数，用迭代和递归各实现一遍',function(){
+	it('递归:if n == 5 return 22',function(){
+		expect(f(5)).toEqual(22);
+	});
+	it('迭代:if n == 5 return 22',function(){
+		expect(f1(5)).toEqual(22);
+	});
 })
 
